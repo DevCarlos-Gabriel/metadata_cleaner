@@ -12,28 +12,15 @@ Este projeto é um script simples em bash para limpar todos os metadados das ima
     ```sh
     git clone https://github.com/DevCarlos-Gabriel/metadata_cleaner.git metadata_cleaner
     cd metadata_cleaner
-    ```
-    
-2. ****:
-
-   Para sistemas baseados em `Debian`:
-    ```sh
-    sudo apt-get install exiftool
-    ```
-    
-    Para sistemas baseados em `Red Hat`:
-    ```sh
-    sudo yum install exiftool
-    ```
-    
-3. **Execute o script**:
+    ``` 
+2. **Execute o script**:
     ```sh
     ./metadata_cleaner.sh
     ```
 
 # Exemplo de uso 📋
 
-Ao executar o script, ele irá percorrer todas as imagens no diretório especificado e limpar os metadados das imagens JPEG, JPG e PNG.
+Ao executar o script, primeiro ele verifica se o sistema já tem instalado a ferramenta exiftool, caso não esteja, o código tenta identificar a distro e instalar o exiftool, depois irá percorrer todas as imagens no diretório especificado e limpar os metadados das imagens JPEG, JPG e PNG.
 
 ## Limpando metadados de uma imagem 🧹
 
